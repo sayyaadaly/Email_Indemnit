@@ -1,6 +1,10 @@
  If (LVerificationDateTimePos > 0 And CheckTimeExecution = True) Or (tVerificationDateTimePos > 0 And EmailAfterTime(item)) Or (MiddleDateVerificationDatePos > 0) Then
  
- 
+             If ((UBound(DateModification) > 1) And (IndexDateMultipleloop <> LBound(DateModification) And (IndexDateMultipleloop <> UBound(DateModification)))) Then
+                MiddleDateVerificationDatePos = InStr(OutlookDateDDMMYYY(item), DateModification(UBound(DateModification)))
+            End 
+            
+            
      Dim VerificationDatePos As Integer
     Dim tVerificationDateTimePos As Integer
     Dim LVerificationDateTimePos As Integer
