@@ -1,0 +1,7 @@
+ If (LVerificationDateTimePos > 0 And CheckTimeExecution = True) Or (tVerificationDateTimePos > 0 And EmailAfterTime(item)) Or (MiddleDateVerificationDatePos > 0) Then
+ 
+ 
+     Dim VerificationDatePos As Integer
+    Dim tVerificationDateTimePos As Integer
+    Dim LVerificationDateTimePos As Integer
+    Dim MiddleDateVerificationDatePos As Integer
